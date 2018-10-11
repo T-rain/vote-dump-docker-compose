@@ -1,6 +1,6 @@
 # vote-dump-docker-compose
 
-docker compose 和 postgresql 配置檔
+docker compose 和 postgresql 配置檔
 
 共有以下幾個檔案
 * docker-compose.yml
@@ -12,7 +12,7 @@
 
 > docker-compose的設定檔
 
-docker-compose的安裝教學
+docker-compose的安裝教學
 
 * How to Install and Use Docker on Ubuntu 18.04  
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
