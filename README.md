@@ -7,26 +7,26 @@ docker compose 和 postgresql 配置檔
 * local_db.dump
 * scripts資料夾
 
-
-## docker-compose.yml
-
-> docker-compose的設定檔
-
-docker-compose的安裝教學
+## docker-compose的安裝教學
 
 * How to Install and Use Docker on Ubuntu 18.04  
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 * How To Install Docker Compose on Ubuntu 18.04  
 https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
 
+## docker-compose.yml
+
+docker-compose的設定檔
+
 修改完相關的 port,password,volume位置，就可以啟動了 volume中 dump 是接下來要restore會用到的  
 scripts是要放一些自己寫的scripts會用到，可不用配置
 
 ## local_db.dump
-從 https://github.com/g0v/councilor-voter-guide/
+
+從 https://github.com/g0v/councilor-voter-guide/  
 專案中 voter_guide 資料夾裡頭的local_db.dump複製過來  
 時間: 2018/10/09
-
+
 # Usage Steps
 
 1. 配置完後，使用以下指令啟動：
@@ -49,4 +49,11 @@ Ref:
 https://www.postgresql.org/docs/current/static/app-pgrestore.html
 
 
-3.最後開始進行連線吧
+3. 最後開始進行連線吧
+```
+host: your_host/ip/localhost
+port: docker-compose裡頭設定的，這邊是設5432
+user: postgres
+password: docker-compose裡頭設定的，這邊是設your_password
+dbname: vote(上個步驟建立的)
+```
