@@ -43,6 +43,7 @@ docker-compose exec db bin/bash
 createdb -U postgres vote
 # restore dump 進 vote 資料庫
 pg_restore -U postgres -W -d vote -v local_db.dump
+# 會需要輸入剛剛docker-compsoe中設定的密碼，這邊是設your_password
 ```
 
 Ref:  
