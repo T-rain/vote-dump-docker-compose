@@ -60,7 +60,11 @@ dbname: vote(上個步驟建立的)
 https://www.openscg.com/bigsql/postgresql/installers.jsp/
 
 2. restore from dump(資料夾裡頭的local_db.dump)
-https://www.youtube.com/watch?v=TsLTDttthRw
+  * pgAdmin 4  
+  https://www.youtube.com/watch?v=TsLTDttthRw  
+  * pg_restore  
+  https://stackoverflow.com/questions/13704160/how-to-pg-restore  
+  指令可參考上方  
 
 3. 開始使用吧
 
