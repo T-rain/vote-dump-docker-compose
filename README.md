@@ -1,18 +1,10 @@
 # vote-dump-docker-compose
-
 docker compose 和 postgresql 配置檔
 
 共有以下幾個檔案
 * docker-compose.yml
 * local_db.dump
 * scripts資料夾
-
-## docker-compose的安裝教學
-
-* How to Install and Use Docker on Ubuntu 18.04  
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
-* How To Install Docker Compose on Ubuntu 18.04  
-https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
 
 ## docker-compose.yml
 
@@ -27,7 +19,7 @@ scripts是要放一些自己寫的scripts會用到，可不用配置
 專案中 voter_guide 資料夾裡頭的local_db.dump複製過來  
 時間: 2018/10/09
 
-# Usage Steps
+## Usage Steps
 
 1. 配置完後，使用以下指令啟動：
 
@@ -58,3 +50,30 @@ user: postgres
 password: docker-compose裡頭設定的，這邊是設your_password
 dbname: vote(上個步驟建立的)
 ```
+
+## 附錄: 
+各系統軟體安裝
+
+### Windows
+非使用docker，與以上步驟不同，只會使用到資料夾中的 local_db.dump 來 restore
+1. 安裝 postgresql
+https://www.openscg.com/bigsql/postgresql/installers.jsp/
+
+2. restore from dump(資料夾裡頭的local_db.dump)
+https://www.youtube.com/watch?v=TsLTDttthRw
+
+3. 開始使用吧
+
+### Mac
+* Get started with Docker for Mac  
+https://docs.docker.com/docker-for-mac/  
+
+照以上步驟做就可安裝完 docker 與 docker-compose
+
+### Linux
+* How to Install and Use Docker on Ubuntu 18.04  
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+* How To Install Docker Compose on Ubuntu 18.04  
+https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
+
+照以上步驟做就可安裝完 docker 與 docker-compose
