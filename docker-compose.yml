@@ -10,4 +10,4 @@ services:
       POSTGRES_PASSWORD: postgres 
     volumes:
        - ./local_db.dump:/local_db.dump
-       - ./scripts/:/scripts
+       - ./scripts/:/scripts/
