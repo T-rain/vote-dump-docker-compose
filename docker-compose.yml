@@ -7,7 +7,7 @@ services:
     ports:
       - 5432:5432
     environment:
-      POSTGRES_PASSWORD: your_password 
+      POSTGRES_PASSWORD: postgres 
     volumes:
-       - /your_location/local_db.dump:/local_db.dump
-       - /your_location/scripts/:/scripts
+       - ./local_db.dump:/local_db.dump
+       - ./scripts/:/scripts
